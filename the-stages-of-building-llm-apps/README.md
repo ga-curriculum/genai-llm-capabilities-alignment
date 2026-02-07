@@ -7,7 +7,7 @@
 
 ## **Learning Objective**
 By the end of this lesson, you will be able to:
--  **Explain** the steps involved in building, fine-tuning, and deploying LLMs
+-  **Explain** the key stages involved in building, fine-tuning, and deploying LLMs
 - **Assess** situations to decide when fine-tuning is necessary
 - **Describe** how pretrained models and multimodal capabilities fit into different use cases, and how to address optimization challenges.
 
@@ -77,7 +77,7 @@ tokenizer = AutoTokenizer.from_pretrained("distilbert-base-uncased")
 model = AutoModelForSequenceClassification.from_pretrained("distilbert-base-uncased", num_labels=2) # num_labels=2 for positive/negative sentiment
 ```
 
-### **Step 3:** (Optional Optimization) Freeze Initial Layers
+### **Step 3:** (Optional) Optimize Training by Freezing Initial Layers
 *This step appears after loading the model but before data preprocessing in the notebook. Freezing initial layers (like embeddings) can speed up training by reducing the number of parameters to update, especially useful if compute is limited or you want the model to retain its general language understanding.*
 ```python
 # Speed optimization 1: Freeze embedding layers
@@ -157,7 +157,8 @@ inputs_neg = {k: v.to(model.device) for k, v in inputs_neg.items()} # Move to mo
 outputs_neg = model(**inputs_neg)
 print("Logits for 'terrible':", outputs_neg.logits) # Higher value for the negative class (index 0 probably) expected
 ```
-- **Reflection**: Did the fine-tuning process adjust the model's predictions? Compare the logits for the positive and negative examples. (Note: A single epoch on a small subset might show only slight changes).
+- **Reflection**: How did fine-tuning affect the model’s predictions? Compare the logits for positive and negative examples.
+Note: With a single epoch and a small dataset, improvements may be subtle.
 
 ---
 
@@ -286,7 +287,7 @@ print("--- Finished Efficient Loop Demo ---")
 
 ## **Exploring Multimodal LLMs**
 
-### **Why Fine-Tuning Isn't Always Enough**
+### **Why Fine-Tuning Alone Isn't Always Sufficient**
 - Some tasks require understanding relationships between different types of data (e.g., describing an image, finding images matching text).
 - **Fine-tuning a text-only LLM won’t inherently teach it to understand images or audio.**
 - **Multimodal models** like CLIP are pretrained on paired data (e.g., images and their captions) to learn joint embeddings.
