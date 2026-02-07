@@ -8,8 +8,8 @@
 ## **Learning Objective**
 By the end of this lesson, you will be able to:
 
-- **Explain** Retrieval-Augmented Generation (RAG) and how it enhances AI knowledge retrieval.
-- **Describe** the key components and workflow of RAG.
+- **Explain** what Retrieval-Augmented Generation (RAG) is and how it enhances AI knowledge retrieval.
+- **Describe** the key components and end-to-end workflow of a RAG system.
 - **Build** a simple RAG system using vector databases and embeddings.
 - **Evaluate** RAG performance using retrieval and generation metrics.
 
@@ -119,7 +119,7 @@ else:
 Key evaluation methods:
 
 - **Precision@K**: Measures how many of the top-k retrieved documents are relevant.
-- **BLEU/ROUGE Scores**: Compares generated responses with reference answers.
-- **Human Evaluation**: Checks factual accuracy and relevance.
+- **BLEU/ROUGE Scores**: Compare generated responses with reference answers.
+- **Human Evaluation**: Assesses factual accuracy and relevance.
 
 
