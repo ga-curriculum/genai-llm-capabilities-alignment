@@ -4,15 +4,15 @@
 </h1>
 
 ## About
-This module explores the key stages of building and optimizing large language models (LLMs). You will gain hands-on experience with fine-tuning, optimizing training efficiency, and exploring alternatives such as retrieval-augmented generation (RAG). By the end of this module, you’ll understand when fine-tuning is necessary, how to optimize LLM performance, and how retrieval-based approaches can complement or replace traditional fine-tuning.
+This module explores the key stages of building and optimizing large language models (LLMs). You will gain hands-on experience with fine-tuning, training optimizing, and retrieval-augmented generation (RAG). You will also understand when fine-tuning is necessary, how to optimize LLM performance, and how retrieval-based approaches can complement or replace traditional fine-tuning.
 
 ### **Learning Objectives**
 By the end of this module, you will be able to:
 
-- **Explain** the role of LLMs in the broader machine learning landscape.
+- **Explain** the role of LLMs within the broader machine learning landscape.
 - **Analyze** when fine-tuning an LLM is necessary and when alternative approaches are better suited.
-- **Optimize** training performance by identifying and fixing inefficiencies in LLM workflows.
-- **Evaluate** the use of multimodal LLMs and compare their effectiveness to fine-tuned models.
+- **Optimize** LLM workflows by identifying and resolving training inefficiencies.
+- **Evaluate** multimodal LLMs and compare their effectiveness with fine-tuned models.
 - **Implement** retrieval-augmented generation (RAG) to enhance AI-generated responses with relevant external knowledge.
 - **Assess** the advantages and limitations of vector databases in RAG-based architectures.
 
